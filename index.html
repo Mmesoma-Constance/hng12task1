@@ -1,8 +1,67 @@
+<!<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Profile Card</title>
+    <script
+      src="https://kit.fontawesome.com/5a0914105d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="profile-card">
+        <div class="">
+      <div class="imageDiv">
+        <img data-testid="profilePicture" src="mine.jpg" class="myImage" />
+      </div>
+      
+        </div>
+      
+<div class="">
+
+
+      <h1 data-testid="fullName">Nwokem Mmesoma</h1>
+      <h2 data-testid="jobTitle">Frontend Developer</h2>
+      <br />
+      <p data-testid="shortBio">
+        I'm a passionate Frontend Developer with a love for crafting intuitive
+        and engaging web experiences. My journey started with HTML and CSS, and
+        I quickly fell in love with JavaScript and React.js. I enjoy solving UI
+        challenges, optimizing performance, and creating seamless user
+        interactions. Currently, I'm honing my skills through the HNG Internship
+        to become an expert in frontend technologies. I'm always eager to learn,
+        collaborate, and contribute to meaningful projects.
+      </p>
+      <br />
+      <p data-testid="currentLocation">
+        <i class="fa-solid fa-location-dot"></i> Anambra, Nigeria
+      </p>
+      <p data-testid="emailAddress">
+        <i class="fa-solid fa-envelope"></i> mmesomanwokem@gmail.com
+      </p>
+      <div data-testid="socialLinks">
+        <a href="https://github.com/johndoe" target="_blank">
+          <button>GitHub</button>
+        </a>
+        <a href="https://github.com/johndoe" target="_blank">
+          <button>Twitter</button>
+        </a>
+      </div>
+      <p data-testid="currentTimeUTC" id="utc-time"></p>
+    </div>
+    
+</div>
+
+    <script>
+      function updateTime() {
+        const now = new Date();
+        document.getElementById("utc-time").textContent =
+          "Current UTC Time: " + now.toUTCString();
+      }
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
 </html>
