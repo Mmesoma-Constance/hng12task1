@@ -39,25 +39,22 @@
           <i class="fa-solid fa-envelope"></i> mmesomanwokem@gmail.com
         </p>
         <div data-testid="socialLinks">
-          <a href="https://github.com/johndoe" target="_blank">
+          <a
+            href="https://github.com/Mmesoma-Constance/hng12task1"
+            target="_blank"
+          >
             <button>GitHub</button>
           </a>
-          <a href="https://github.com/johndoe" target="_blank">
+          <a
+            href="https://x.com/StacyInTech_?t=9FA0aUbHUxbOkmBeBuGlOw&s=09"
+            target="_blank"
+          >
             <button>Twitter</button>
           </a>
         </div>
         <p data-testid="currentTimeUTC" id="utc-time"></p>
       </div>
     </div>
-
-    <script>
-      function updateTime() {
-        const now = new Date();
-        document.getElementById("utc-time").textContent =
-          "Current UTC Time: " + now.toUTCString();
-      }
-      updateTime();
-      setInterval(updateTime, 1000);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

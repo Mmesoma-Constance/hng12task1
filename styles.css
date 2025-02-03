@@ -1,14 +1,15 @@
 body {
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f4f4f4;
-
+  background-color: #e2f9e2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   color: white;
 }
+
 .profile-card {
   background: linear-gradient(to top, #2e8b57, #3cb371);
   color: white;
@@ -21,7 +22,7 @@ body {
   gap: 30px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   body {
     height: 140vh;
   }
@@ -48,12 +49,8 @@ body {
 .profile-card img {
   max-width: 100%;
   height: auto;
-
-  /* width: 100px;
-  height: 100px; */
-  /* border-radius: 50%; */
-  /* object-fit: cover; */
 }
+
 .profile-card h1 {
   font-size: 1.5em;
   margin: 10px 0 5px;
@@ -89,6 +86,13 @@ body {
   color: green;
   padding: 7px 15px;
   border-radius: 20px;
+  border: none;
+}
+
+.profile-card button:hover {
+  font-weight: 500;
+  cursor: pointer;
+  background: #01db01;
 }
 
 .profile-card a:hover {
